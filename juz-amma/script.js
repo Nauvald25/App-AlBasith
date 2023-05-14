@@ -9,10 +9,12 @@ $(document).ready(function(){
 
 
 
+
+
 function showListSurat(){
     let cover_surat = '';
     $.ajax({
-        url : 'https://.id/api/suequranrat',
+        url : 'https://equran.id/api/surat',
         success: data =>{
             data.forEach(s => {
                 if (s.nomor >= 78){
